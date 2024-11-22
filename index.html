@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bicycle Store</title>
-
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <nav>
@@ -15,138 +16,83 @@
                 <i class="fa-solid fa-house-chimney"></i>
             </a>
             <div class="nav-profile">
-                <p class="nav-profile-name">Shoping</p>
-                <div class="nav-proflie-cart">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="nav-profile-name">Shopping</p>
+                <div class="nav-profile-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </div>
             </div>
         </div>
     </nav>
 
     <div class="container">
-        <div class="sidebar">
-            <input type="text" class="sidebar-search" placeholder="ค้นหา...">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <input type="text" class="sidebar-search" placeholder="ค้นหา..." aria-label="ค้นหาสินค้า">
+            <a href="#brand1" class="sidebar-item">LA-BICYCLE</a>
+            <a href="#brand2" class="sidebar-item">BMC</a>
+            <a href="#brand3" class="sidebar-item">Scott</a>
+            <a href="#brand4" class="sidebar-item">KHS</a>
+        </aside>
 
-            <a href="#brand1" class="sidebar-item">
-                LA-BICYCLE
-            </a>
-            <a href="#brand2" class="sidebar-item">
-                BMC
-            </a>
-            <a href="#brand3" class="sidebar-item">
-                Scott
-            </a>
-            <a href="#brand4" class="sidebar-item">
-                KHS
-            </a>
+        <!-- Product Section -->
+        <main>
+            <!-- Brand 1 -->
+            <section id="brand1" class="product-section">
+                <h2>LA-BICYCLE</h2>
+                <article class="product-item">
+                    <img class="product-img" src="/img/1534905486BUNNY CUTE 12PINK.jpg" alt="จักรยานรุ่น CUTE 12 สีชมพู">
+                    <p>CUTE 12PINK</p>
+                </article>
+                <article class="product-item">
+                    <img class="product-img" src="/img/1537343199BUNNY CUTE 16PINK.jpg" alt="จักรยานรุ่น CUTE 16 สีชมพู">
+                    <p>CUTE 16PINK</p>
+                </article>
+            </section>
 
-        </div>
-        <div class="product">
-            <div class="class-product-item">
-                <div id="brand1" class="brand">
-                <img  class="product-img" src="/imgLA/1534905486BUNNY CUTE 12PINK.jpg" alt="">
-                <p>CUTE 12PINK</p>
-                </div>
-            </div>
-            <div class="class-product-item">
-                <img  class="product-img" src="/imgLA/1537343199BUNNY CUTE 16PINK.jpg" alt="">
-                <p>CUTE 16PINK</p>
-            </div>
-            <div class="class-product-item">
-                <img  class="product-img" src="/imgLA/th_169648209016 ALFA RED.png" alt="">
-                <p>ALFA RED</p>
-            </div>
-            <div class="class-product-item">
-                <img  class="product-img" src="/imgLA/th_169649070016 HERO RIDE.png" alt="">
-                <p>HERO RIDE</p>
-            </div>
-            <div class="class-product-item">
-                <img  class="product-img" src="/imgLA/th_169649198812 HERO RIDE - Copy.jpg" alt="">
-                <p>HERO RIDE</p>
-            </div>
-        </div>
-    </div>
-    <div class="product2">
-        <div class="class-product-item">
-            <div id="brand2" class="brand">
-            <img  class="product-img" src="/BMC/Teammachine SLR FOUR.jpg"  alt="">
-            <p>SLR FOUR</p>
-            </div>
-        </div>
-        <div class="class-product-item">
-            <img  class="product-img" src="/BMC/TEAMMACHINE SLR01 FIVE.png" alt="">
-            <p>SLR01 FIVE</p>
-        </div>
-        <div class="class-product-item">
-            <img  class="product-img" src="/BMC/TEAMMACHINE SLR01 THREE.png" alt="">
-            <p>SLR01 THREE</p>
-        </div>
-        <div class="class-product-item">
-            <img  class="product-img" src="/BMC/Twostroke 01.jpg" alt="">
-            <p>Twostroke</p>
-        </div>
-        <div class="class-product-item">
-            <img  class="product-img" src="/BMC/Twostroke AL SIX.png" alt="">
-            <p>Twostroke AL SIX</p>
-        </div>
-    </div>
-</div>
+            <!-- Brand 2 -->
+            <section id="brand2" class="product-section">
+                <h2>BMC</h2>
+                <article class="product-item">
+                    <img class="product-img" src="/img/Teammachine SLR FOUR.jpg" alt="จักรยานรุ่น Teammachine SLR FOUR">
+                    <p>SLR FOUR</p>
+                </article>
+                <article class="product-item">
+                    <img class="product-img" src="/img/TEAMMACHINE SLR01 FIVE.png" alt="จักรยานรุ่น TEAMMACHINE SLR01 FIVE">
+                    <p>SLR01 FIVE</p>
+                </article>
+            </section>
 
-<div class="product3">
-    <div class="class-product-item">
-        <div id="brand3" class="brand">
-        <img  class="product-img" src="/img Scott/ASPECT 940.png" alt="">
-        <p>ASPECT 940</p>
-        </div>
-    </div>
-    <div class="class-product-item">
-        <img  class="product-img" src="/img Scott/foil rc 30.png" alt="">
-        <p>Foil rc 30</p>
-    </div>
-    <div class="class-product-item">
-        <img  class="product-img" src="/img Scott/SCALE 950.png" alt="">
-        <p>SCALE 950</p>
-    </div>
-    <div class="class-product-item">
-        <img  class="product-img" src="/img Scott/SCALE 970.png" alt="">
-        <p>SCALE 970</p>
-    </div>
-    <div class="class-product-item">
-        <img  class="product-img" src="/img Scott/SCALE 980.png" alt="">
-        <p>SCALE 980</p>
-    </div>
-</div>
-</div>
+            <!-- Brand 3 -->
+            <section id="brand3" class="product-section">
+                <h2>Scott</h2>
+                <article class="product-item">
+                    <img class="product-img" src="/img/ASPECT 940.png" alt="จักรยานรุ่น ASPECT 940">
+                    <p>ASPECT 940</p>
+                </article>
+                <article class="product-item">
+                    <img class="product-img" src="/img/foil rc 30.png" alt="จักรยานรุ่น Foil RC 30">
+                    <p>Foil RC 30</p>
+                </article>
+            </section>
 
-<div class="product4">
-    <div class="class-product-item">
-        <div id="brand4" class="brand">
-        <img  class="product-img" src="/KHS/FLITE 280.jpg" alt="">
-        <p>FLITE 280</p>
-        </div>
+            <!-- Brand 4 -->
+            <section id="brand4" class="product-section">
+                <h2>KHS</h2>
+                <article class="product-item">
+                    <img class="product-img" src="/img/FLITE 280.jpg" alt="จักรยานรุ่น FLITE 280">
+                    <p>FLITE 280</p>
+                </article>
+                <article class="product-item">
+                    <img class="product-img" src="/img/FLITE 747.jpg" alt="จักรยานรุ่น FLITE 747">
+                    <p>FLITE 747</p>
+                </article>
+            </section>
+        </main>
     </div>
-    <div class="class-product-item">
-        <img  class="product-img" src="/KHS/FLITE 747.jpg" alt="">
-        <p>FLITE 747</p>
-    </div>
-    <div class="class-product-item">
-        <img  class="product-img" src="/KHS/FLITE 900.jpg" alt="">
-        <p>FLITE 900</p>
-    </div>
-    <div class="class-product-item">
-        <img  class="product-img" src="/KHS/GRIT 330.jpg" alt="">
-        <p>GRIT 330</p>
-    </div>
-    <div class="class-product-item">
-        <img  class="product-img" src="/KHS/GRIT 440.jpg" alt="">
-        <p>GRIT 440</p>
-    </div>
-</div>
-</div>
 
-<footer>
-    <p>ติดต่อ โจ ปวช.3</p>
-</footer>
-
+    <!-- Footer -->
+    <footer>
+        <p>ติดต่อ: โจ ปวช.3</p>
+    </footer>
 </body>
 </html>
